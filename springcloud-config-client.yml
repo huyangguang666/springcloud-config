@@ -3,7 +3,7 @@
 spring:
     profiles: dev
     application:
-        name: springcloud-config-client-client
+        name: springcloud-config-client
 eureka:
     client: 
         service-url: 
@@ -14,7 +14,7 @@ server:
 spring:
     profiles: test
     application:
-        name: springcloud-config-client-client
+        name: springcloud-config-client
 eureka:
     client: 
         service-url: 
