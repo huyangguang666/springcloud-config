@@ -5,7 +5,6 @@
 ---
 server:
   port: 8001
-
 mybatis-plus:
   #config-location: classpath:mybatis/mybatis.cfg.xml       # mybatis配置文件所在路径
   type-aliases-package: com.study.springcloud.entities                 # 所有Entity别名类所在包
@@ -13,6 +12,7 @@ mybatis-plus:
     - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件 需要创建文件
 
 spring:
+  profiles: dev
   application:
     name: springcloud-dept                        #微服务最重要的是取名字！微服务对外暴露的名字。同一集群下必须使用同一服务名！！！
   datasource:
@@ -52,6 +52,7 @@ mybatis-plus:
     - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件 需要创建文件
 
 spring:
+  proflies: test
   application:
     name: springcloud-dept                        #微服务最重要的是取名字！微服务对外暴露的名字。同一集群下必须使用同一服务名！！！
   datasource:
